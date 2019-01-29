@@ -1,6 +1,6 @@
 <html>
 <head>
- <tiltle>Login</title>
+ <tiltle></title>
  
  <!-- Bootstrap Links -->
  
@@ -12,18 +12,36 @@
 </head >
 
 <body>
-
-	 
-	 
-	 
-	 
-
-	 
- 
- 
- 
- 
-
+   <div class ="container">
+      <br>
+	  <br>
+	 <form>
+	  <div class="form-group">
+		<label for="exampleInputEmail1">username</label>
+		<input type="email" class="form-control" id="username" placeholder="username">
+	  </div>
+	  <div class="form-group">
+		<label for="exampleInputPassword1">password</label>
+		<input type="password" class="form-control" id="password" placeholder="password">
+	  </div>
+	  <div class="form-group form-check">
+		<input type="checkbox" class="form-check-input" id="exampleCheck1">
+		<label class="form-check-label" for="exampleCheck1">Check me out</label>
+	  </div>
+	  <button type="submit" class="btn btn-primary" onclick="myfunction()">Login</button>
+	</form>
+	</div>
+	
+    <script type="text/javascript">
+	
+	function myfunction(){
+		var username; 
+		var password; 
+		username=document.getElementById("username").value; 
+		password=document.getElementById("password").value; 
+    alert("welcome "+username);
+    }
+	</script>
 
 </body>
 
